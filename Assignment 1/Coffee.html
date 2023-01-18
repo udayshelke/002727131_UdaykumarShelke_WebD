@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee</title>
+    <title>Menu</title>
     <link rel="icon" href="/Images/favicon.jpg">
     <style>
         header{
@@ -26,7 +26,7 @@
         
         li {
             float: left;
-            width: 400px;
+            width: 580px;
         }
         
         li a {
@@ -34,6 +34,11 @@
             padding: 20px;
             background-color: #D2B48C;
             color: black;
+        }
+        table th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
         }
         footer {
             background-color:#835C3B;
@@ -46,17 +51,33 @@
 <body bgcolor="#C4A484">
     <header>
         <h1><i><b>The Brew Box</b></i></h1>
-      </header>   
-     <ul>
+    </header>   
+    <ul>
         <li><a href="MainPage.html">Home</a></li>
         <li><a href="Menu.html">Menu</a></li>
-        <li><a href="Coffee.html">Coffee</a></li>
-        <li><a href="#about">About</a></li>
-     </ul>
- 
-     <br><br>
-     <footer>
-         © 2023 The Brew Box
-     </footer>
+        <li><a href="Coffee.html">Contact Us</a></li>
+    </ul>
+    <br><br><br>
+    <center>
+    <form action="/action_page.php" target="_blank" method="get">
+    <label for="fname">Full Name:</label>
+    <input type="text" id="fname" name="fname" value="">
+    <label for="Phone">Phone Number:</label>
+    <input type="text" id="Phone" name="Phone" value=""><br><br>
+    <label for="email">Email ID:</label>
+    <input type="text" id="email" name="email" value="">
+    <label for="Order">Order No:</label>
+    <input type="text" id="Order" name="Order" value=""><br><br>
+    <label for="Comments">Comments/Suggestions:</label><br>
+    <textarea name="message" rows="10" cols="30"></textarea><br><br>
+    <input type="submit" value="Submit">
+    </form> </center>
+
+
+    
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        © 2023 The Brew Box
+    </footer>
 </body>
 </html>
