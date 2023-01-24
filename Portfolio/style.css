@@ -25,6 +25,7 @@ a{
 .logo img{
     width: 30px;
     display: block;
+    margin-left: 50px;
 }
 .navbar-center ul li{
     display: inline-block;
@@ -50,14 +51,25 @@ a{
 }
 
 .container{
+    float: left;
     display: flex;
     padding: 20px 6%;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+.column-left,.column-right{
+    width:24%;
+    padding: 6px 6px;
+    box-shadow: 10px  5px 5px rgba(0,0,0,0.1);
+}
+.column-main{
+    width: 47%;
+    padding: 6px 6px;
+    box-shadow: 5px  5px 5px rgba(0,0,0,0.1);
+}
+------------------left_sidebar-----------------------------------------------------
 .column-left{
-    float: left;
-    width: 25%;
+    flex-basis: 25%;
     align-self: flex-start;
 }
 .profile-box{
@@ -73,11 +85,102 @@ a{
     padding: 4px;
     margin-top: -45px;
 }
+.profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.profile-info h3{
+    font-size: 14px;
+    font-weight: 500px;
+    color: #777;
+}
+.profile-info ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.profile-info ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.profile-info ul li span{
+    float:right;
+    color: #045be6;
+}
+.leftcolumn-activity{
+    background: #fff;
+    padding: 5px 20px;
+    margin: 12px 0;
+}
+
+.leftcolumn-activity h3{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.leftcolumn-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin: 3px 0;
+}
+.leftcolumn-activity a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+------------------right_sidebar-----------------------------------------------------
 .column-right{
-    float: right;
-    width: 25%;
+    flex-basis: 25%;
     align-self: flex-start;
 }
+
+
+------------------main_column-----------------------------------------------------
 .column-main{
-    width: 48%;
+    flex-basis: 47%;
+}
+
+-------------------Profile-Page--------------
+.profile-main{
+    flex-basis: 73%;
+    width: 73%;
+}
+
+.profile-sidebar{
+    flex-basis: 25%;
+    width: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73%;
+}
+
+.profile-container{
+    background: #fff;
+}
+.profile-container-inner{
+    padding: 0 4% 10px;
+}
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: rgb(5, 0, 0);
+}
+.profile-container h1{
+    font-size: 28px;
+    font-weight: 500;
+    color: #222;
+}
+.profile-container b{
+    font-weight: 500;
+}
+.profile-container p{
+    margin-top: 5px;
 }
