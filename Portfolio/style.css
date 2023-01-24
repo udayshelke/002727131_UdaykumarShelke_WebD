@@ -148,16 +148,22 @@ a{
 
 -------------------Profile-Page--------------
 .profile-main{
-    flex-basis: 73%;
     width: 73%;
+    padding: 6px 6px;
+    box-shadow: 10px  10px 10px rgba(0.1,0.1,0.1,0.1);
 }
 
 .profile-sidebar{
-    flex-basis: 25%;
     width: 25%;
+    padding: 6px 6px;
+    box-shadow: 10px  10px 10px rgba(0.1,0.1,0.1,0.1);
+}
+.profile-main{
+    flex-basis: 73%;
+}
+.profile-sidebar{
+    flex-basis: 25%;
     align-self: flex-start;
-    position: sticky;
-    top: 73%;
 }
 
 .profile-container{
@@ -183,4 +189,72 @@ a{
 }
 .profile-container p{
     margin-top: 5px;
+}
+.profile-container p a{
+    color: #045be6;
+    font-weight: 500;
+   
+}
+.profile-description{
+    background: #fff;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+}
+.profile-description h2{
+    color: #333;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+.profile-desc-row{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.profile-desc-row img{
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.profile-desc-row div{
+    width: 100%;
+}
+.profile-desc-row h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.profile-desc-row b{
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-desc-row hr{
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 10px;
+}
+.profile-desc-row p{
+    margin-top: 15px;
+}
+.container hr{
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 10px;
+}
+.skills-btn{
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    border: 1px solid #777;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.language-btn{
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    background: #e4e6eb;
+    font-size: 12px;
+    font-weight: 500;
 }
