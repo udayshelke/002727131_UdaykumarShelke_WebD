@@ -436,5 +436,14 @@ input:checked ~ .Gal label:hover img{
         position: relative;
         top: unset;
     }
-
+    .Gal{
+        flex-basis: 100%;
+    }
+    .Gal img{
+        width:10px;
+        height: 10px;
+    }
+    .contact-container .contact-form .contact-info{
+        flex-basis: 100%;
+    }
 }
