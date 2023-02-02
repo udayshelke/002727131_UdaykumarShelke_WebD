@@ -1,9 +1,9 @@
 
 # Assignment 3
 
-- Author: Udaykumar Shelke
-- NUID: 002727131
-- Emailid: shelke.u@northeastern.edu
+- Author: Aditya Mulik
+- NUID: 002127694
+- Email: mulik.a@northeastern.edu
 
 ## Topic: JavaScript DOM Manipulation & Table Modification.
 
